@@ -3,7 +3,7 @@ from turtle import Screen
 from get_state_info import *
 
 screen = Screen()
-background = "blank_states_img.gif"
+background = "USA_blank_states_img.gif"
 screen.addshape(background)
 turtle.shape(background)
 
