@@ -39,10 +39,7 @@ def check_state(answer):
 def missing_states():
     """Used to create a new .csv file with all
     the states not answered by the user."""
-    miss_states = []
-    for state in all_states:
-        if state not in guessed:
-            miss_states.append(state)
+    miss_states = [state for state in all_states if state not in guessed]  # Adds the states that the user did not input
     missing = pandas.DataFrame(miss_states)
     missing.to_csv("States_to_Learn.csv")
 
